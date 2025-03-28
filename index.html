@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hồ sơ cá nhân</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            overflow: hidden;
+        }
+        /* Video nền */
+        
+        .background-video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+        
+        .profile-container {
+            position: relative;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            margin: 50px auto;
+            max-width: 800px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            display: block;
+            margin: 0 auto;
+            transition: transform 0.3s ease-in-out;
+        }
+        
+        .profile-img:hover {
+            transform: scale(1.1);
+        }
+        
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        
+        .info {
+            margin: 20px 0;
+        }
+        
+        .social-links-container {
+            position: relative;
+            margin-top: 20px;
+        }
+        
+        .social-links {
+            display: flex;
+            justify-content: space-between;
+            /* Căn chỉnh khoảng cách đều giữa các liên kết */
+            align-items: center;
+        }
+        
+        .social-links a {
+            text-decoration: none;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+        }
+        
+        .social-links a:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        
+        .facebook {
+            background-color: #3b5998;
+            margin-left: 0;
+            /* Đặt gần lề trái */
+        }
+        
+        .facebook:hover {
+            background-color: #2d4373;
+        }
+        
+        .tiktok {
+            background-color: #010101;
+            margin: auto;
+            /* Căn giữa TikTok */
+        }
+        
+        .tiktok:hover {
+            background-color: #ff0050;
+        }
+        
+        .zalo {
+            background-color: #008fe5;
+            margin-right: 0;
+            /* Đặt gần lề phải */
+        }
+        
+        .zalo:hover {
+            background-color: #0074c1;
+        }
+        
+        .contact-title {
+            text-align: center;
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-bottom: 10px;
+            animation: flash-color 1s infinite;
+            /* Hiệu ứng nháy màu */
+        }
+        
+        @keyframes flash-color {
+            0% {
+                color: #ff4d4d;
+            }
+            50% {
+                color: #4caf50;
+            }
+            100% {
+                color: #007bff;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Video nền -->
+    <video class="background-video" autoplay loop muted>
+        <source src="0321.mp4" type="video/mp4">
+        Trình duyệt của bạn không hỗ trợ video nền.
+    </video>
+
+    <div class="profile-container">
+        <img src="vy.jpg" alt="Ảnh đại diện" class="profile-img">
+        <h1>Dương Kiều Vỹ</h1>
+
+        <div class="info">
+            <p><strong>Giới thiệu:</strong> Hello Mọi Người</p>
+            <p><strong>Ngày sinh:</strong> 11/06/2010</p>
+            <p><strong>Email:</strong> Duongkieuvy06@gmail.com</p>
+            <p><strong>Nghề nghiệp:</strong> Học Sinh</p>
+            <p><strong>Sở thích:</strong> Chụp Ảnh, Nhảy, Chơi với mèo, Ăn vặt</p>
+        </div>
+
+        <div class="social-links-container">
+            <p class="contact-title">Liên hệ</p>
+            <!-- Hiệu ứng nháy màu -->
+            <div class="social-links">
+                <a href="https://www.facebook.com/profile.php?id=100084961533344" target="_blank" class="facebook">Facebook</a>
+                <a href="https://www.tiktok.com/@duongkieuvy06?lang=vi-VN" target="_blank" class="tiktok">TikTok</a>
+                <a href="https://zalo.me" target="_blank" class="zalo">Zalo</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
